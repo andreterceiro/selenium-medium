@@ -1,0 +1,22 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div>
+			<label for="txtNome">A:</label>
+			<input type="text" name="txtA" id="txtA" onkeyup="somar()" />	
+		</div>
+		<div>
+			<label for="txtSobrenome">B:</label>
+			<input type="text" name="txtB" id="txtB" onkeyup="somar()" />
+		</div>
+		<br />
+		A + B:
+		<span id="resultado"></span>
+		<script>
+			function somar() {
+				document.getElementById("resultado").innerHTML = (parseInt(document.getElementById("txtA").value) + parseInt(document.getElementById("txtB").value)); 
+			}
+			</script>
+	</body>
+</html>

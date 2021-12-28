@@ -1,0 +1,20 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div>
+			<label for="txtNome">Nome:</label>
+			<input type="text" name="txtNome" id="txtNome" onkeyup="concatenar()" />	
+		</div>
+		<div>
+			<label for="txtSobrenome">Sobrenome</label>
+			<input type="text" name="txtSobrenome" id="txtSobrenome"  onkeyup="concatenar()"/>
+		</div>
+		<div id="resultado"></div>
+		<script>
+			function concatenar() {
+				document.getElementById("resultado").innerHTML = document.getElementById("txtNome").value + " " + document.getElementById("txtSobrenome").value; 
+			}
+			</script>
+	</body>
+</html>
